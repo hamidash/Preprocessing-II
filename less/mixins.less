@@ -1,1 +1,28 @@
 // Mixins in here
+
+//button with 3 parameters (width, padding and background), rest are static values
+
+.button(@wid, @pad, @bg ) {
+    font-weight: bold;
+    width: @wid;
+    padding: @pad;
+    background: @bg;
+    border-radius: 20px;
+    color: @main-bg;
+    font-size: 1.8rem;   
+}
+
+//animation for buttons
+.button-animation(@bg,@newbg) {
+  
+  animation-name: navanimation;
+  animation-duration: 5s;
+  transition: all 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+  @keyframes navanimation{
+    from {background: @bg;}
+    to {background: @newbg;}
+  }
+}
