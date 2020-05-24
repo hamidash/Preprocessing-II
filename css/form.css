@@ -21,7 +21,7 @@ form {
     flex-direction: column;
     align-items: center;
     border-radius: 10%;
-    background: teal;
+    background: rgba(15, 185, 185, 0.3);
     width: 80%;
     height: auto;
 }
